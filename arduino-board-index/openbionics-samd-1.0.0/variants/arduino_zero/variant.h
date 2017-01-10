@@ -55,8 +55,7 @@ extern "C"
 // Number of pins defined in PinDescription array
 #define PINS_COUNT           (26u)
 #define NUM_DIGITAL_PINS     (20u)
-//#define NUM_ANALOG_INPUTS    (6u)
-#define NUM_ANALOG_INPUTS    (9u)			// Olly extra ADC pins
+#define NUM_ANALOG_INPUTS    (10u)			// Olly extra ADC pins
 #define NUM_ANALOG_OUTPUTS   (1u)
 #define analogInputToDigitalPin(p)  ((p < 6u) ? (p) + 14u : -1)
 
@@ -103,8 +102,7 @@ extern "C"
 #define PIN_A6               (1ul)		// PA10
 #define PIN_A7               (25ul)		// PB03
 #define PIN_A8               (0ul)		// PA11
-
-
+#define PIN_A9				 (8ul)		// PA06
 
 
 static const uint8_t A0  = PIN_A0;
@@ -122,6 +120,7 @@ static const uint8_t DAC0 = PIN_DAC0;
 static const uint8_t A6 = PIN_A6;		// PA10, Pin 1, ADC/AIN[18] 
 static const uint8_t A7 = PIN_A7;
 static const uint8_t A8 = PIN_A8;
+static const uint8_t A9 = PIN_A9;		// PA06, Pin 8, ADC/AIN[6]
 
 
 // Other pins
